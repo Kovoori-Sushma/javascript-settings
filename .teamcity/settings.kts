@@ -27,6 +27,7 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 version = "2020.2"
 
 project {
+    description = "My Javascript project"
 
     vcsRoot(HttpsGithubComG0t4teamcityCourseCards)
 
