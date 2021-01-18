@@ -108,6 +108,8 @@ object id03DeployToStaging : BuildType({
         }
         snapshot(id02Firefox) {
         }
+        snapshot(id02InternetExplorer) {
+        }
     }
 })
 
