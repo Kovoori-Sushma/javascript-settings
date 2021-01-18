@@ -88,6 +88,11 @@ object id02InternetExplorer : BuildType({
     params {
         param("Browser", "IE")
     }
+
+    dependencies {
+        snapshot(id01FastTest) {
+        }
+    }
 })
 
 object id03DeployToStaging : BuildType({
