@@ -97,7 +97,6 @@ object id03DeployToStaging : BuildType({
 object Template_1 : Template({
     id("Template")
     name = "template"
-    description = "My Javascript project"
 
     vcs {
         root(HttpsGithubComG0t4teamcityCourseCards)
