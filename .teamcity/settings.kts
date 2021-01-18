@@ -103,6 +103,16 @@ object id03DeployToStaging : BuildType({
         root(HttpsGithubComG0t4teamcityCourseCards)
     }
 
+    steps {
+        script {
+            name = "IIS Deploy"
+            scriptContent = """
+                rmdir /S /Q \inetpub\wwwroot\
+                xcopy /S /I /Y app \inetpub\wwwroot\
+            """.trimIndent()
+        }
+    }
+
     dependencies {
         snapshot(id02Chrome) {
         }
