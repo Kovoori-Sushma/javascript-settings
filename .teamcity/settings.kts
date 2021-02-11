@@ -37,6 +37,7 @@ project {
     buildType(id02Chrome)
     buildType(id03DeployToStaging)
 
+    template(Template2)
     template(Template_1)
 }
 
@@ -141,6 +142,10 @@ object Template_1 : Template({
             scriptContent = "npm test -- --single-run --browsers %Browser% --colors false --reporters teamcity"
         }
     }
+})
+
+object Template2 : Template({
+    name = "template2"
 })
 
 object HttpsGithubComG0t4teamcityCourseCards : GitVcsRoot({
