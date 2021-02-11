@@ -32,6 +32,7 @@ project {
     vcsRoot(HttpsGithubComG0t4teamcityCourseCards)
 
     buildType(id02Firefox)
+    buildType(TemplateTest)
     buildType(id01FastTest)
     buildType(id02InternetExplorer)
     buildType(id02Chrome)
@@ -120,6 +121,11 @@ object id03DeployToStaging : BuildType({
         snapshot(id02Firefox) {
         }
     }
+})
+
+object TemplateTest : BuildType({
+    templates(Template2)
+    name = "template test"
 })
 
 object Template_1 : Template({
