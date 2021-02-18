@@ -1,5 +1,6 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
 import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.script
+import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.vcs
 import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
 
 /*
@@ -49,6 +50,13 @@ object id01FastTest : BuildType({
 
     params {
         param("Browser", "PhantomJS")
+    }
+
+    triggers {
+        vcs {
+            id = "vcsTrigger"
+            branchFilter = ""
+        }
     }
 })
 
