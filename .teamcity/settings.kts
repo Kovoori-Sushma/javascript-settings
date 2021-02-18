@@ -55,6 +55,8 @@ object id01FastTest : BuildType({
     triggers {
         vcs {
             id = "vcsTrigger"
+            triggerRules = "+:root=${HttpsGithubComG0t4teamcityCourseCards.id}:**"
+
             branchFilter = ""
             perCheckinTriggering = true
             enableQueueOptimization = false
