@@ -111,6 +111,8 @@ object id03DeployToStaging : BuildType({
     id("03DeployToStaging")
     name = "03. Deploy To Staging"
 
+    artifactRules = """app\index.html"""
+
     vcs {
         root(HttpsGithubComG0t4teamcityCourseCards)
     }
