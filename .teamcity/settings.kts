@@ -56,6 +56,8 @@ object id01FastTest : BuildType({
         vcs {
             id = "vcsTrigger"
             branchFilter = ""
+            perCheckinTriggering = true
+            enableQueueOptimization = false
         }
     }
 })
